@@ -13,8 +13,14 @@ import sys
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
 
-def countingSort(arr):
+def countingSort(n, arr):
     # Write your code here
+    result = [0] * 100
+
+    for i in arr:
+        result[i] += 1
+
+    return result
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
@@ -23,7 +29,7 @@ if __name__ == '__main__':
 
     arr = list(map(int, input().rstrip().split()))
 
-    result = countingSort(arr)
+    result = countingSort(n, arr)
 
     fptr.write(' '.join(map(str, result)))
     fptr.write('\n')
