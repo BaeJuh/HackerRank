@@ -18,7 +18,7 @@ def miniMaxSum(arr):
     arr_min = min(arr)
     arr_max = max(arr)
 
-    print(arr_sum - arr_min, arr_sum - arr_max)
+    print(arr_sum - arr_max, arr_sum - arr_min)
 
 if __name__ == '__main__':
 
